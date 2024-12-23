@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excavation Application</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="{% url 'define_excavation_areas' %}">Define Areas</a>
+        <a href="{% url 'add_item' %}">Add Item</a>
+        <a href="{% url 'item_list' %}">Item List</a>
+        <a href="{% url 'map' %}">Map</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
